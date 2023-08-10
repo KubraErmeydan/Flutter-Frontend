@@ -119,21 +119,72 @@ class _PlanPageState extends State<PlanPage> {
                  Padding(
                    padding: const EdgeInsets.all(8.0),
                    child: Text('Selected Extras',style: TextStyle(fontWeight: FontWeight.bold),),),
+                   SizedBox(height: 25,),
                    Row(
+                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                      children: [
                        Container(
                          child: Column(
                            children: [
-                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:45,),
+                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/fridge.png',height: 40,)),
+                             SizedBox(height: 15),
                              Text('Inside Fridge')
                            ],
                          ),
-                       )
+                       ),
+                       Container(
+                         child: Column(
+                           children: [
+                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/organizing.png',height: 40,)),
+                             SizedBox(height: 15),
+                             Text('Organizing')
+                           ],
+                         ),
+                       ),
+                       Container(
+                         child: Column(
+                           children: [
+                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/blinds.png',height: 40,)),
+                             SizedBox(height: 15),
+                             Text('Small Blinds')
+                           ],
+                         ),
+                       ),
                      ],
                    ),
-                   Row(children: [
-
-                   ],)
+                   SizedBox(height: 30,),
+                   Row(
+                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                     children: [
+                       Container(
+                         child: Column(
+                           children: [
+                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/patio.png',height: 40,)),
+                             SizedBox(height: 15),
+                             Text('Patio')
+                           ],
+                         ),
+                       ),
+                       Container(
+                         child: Column(
+                           children: [
+                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/organizing.png',height: 40,)),
+                             SizedBox(height: 15),
+                             Text('Organizing')
+                           ],
+                         ),
+                       ),
+                       Container(
+                         child: Column(
+                           children: [
+                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/blinds.png',height: 40,)),
+                             SizedBox(height: 15),
+                             Text('Small Blinds')
+                           ],
+                         ),
+                       ),
+                     ],
+                   ),
                  
                  ],              
                ),

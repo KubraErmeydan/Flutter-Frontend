@@ -55,7 +55,7 @@ class _StartPageState extends State<StartPage> {
                   color: Colors.white,
                   borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
                 ),
-                child:TextButton(onPressed: (){Navigator.of(context).pushNamed('/plan');}, child: Text('Get Started'),)
+                child:TextButton(onPressed: (){Navigator.of(context).pushNamed('/account');}, child: Text('Get Started'),)
             ),
           )
         ],
