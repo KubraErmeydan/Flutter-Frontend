@@ -21,14 +21,9 @@ class _StartPageState extends State<StartPage> {
                 children: [
                   SizedBox(height: 100,),
                   Image.asset(
-                    'assets/path1484.png',
+                    'assets/nimbl.png',
                     width: 20,
                     height: 27,
-                  ),
-                  Image.asset(
-                    'assets/path1483.png',
-                    width: 15,
-                    height: 22,
                   ),
                   SizedBox(width: 5,),
                   Text('Nimbl.', style: TextStyle(fontSize: 26,color: Colors.white,fontWeight: FontWeight.bold),),

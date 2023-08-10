@@ -124,7 +124,7 @@ class _PlanPageState extends State<PlanPage> {
                        Container(
                          child: Column(
                            children: [
-
+                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:45,),
                              Text('Inside Fridge')
                            ],
                          ),
