@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:home_cleaning/pages/account_page.dart';
+import 'package:home_cleaning/pages/calendar.dart';
+import 'package:home_cleaning/pages/first_page.dart';
 import 'package:home_cleaning/pages/plan_page.dart';
 import 'package:home_cleaning/pages/start_page.dart';
 
@@ -17,7 +19,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
       initialRoute: '/',
@@ -25,6 +26,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => StartPage(),
         '/plan': (context) => PlanPage(),
         '/account': (context) => AccountPage(),
+        '/calendar': (context) => CalendarPage(),
+        '/first': (context) => FirstPage(),
       },
     );
   }

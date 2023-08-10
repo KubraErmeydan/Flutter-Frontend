@@ -12,29 +12,29 @@ class _PlanPageState extends State<PlanPage> {
     return Scaffold(
       body: Container(
         width: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: Color(0xff5C4DB1),
         borderRadius: BorderRadius.only(topRight: Radius.circular(25), topLeft: Radius.circular(25) )
       ),
        child: Column(
          children: [
-           SizedBox(height: 80,),
-           Padding(
-             padding: const EdgeInsets.all(8.0),
+           const SizedBox(height: 80,),
+           const Padding(
+             padding: EdgeInsets.all(8.0),
              child: Text('Your Plan', style: TextStyle(color: Colors.white,fontSize: 21,fontWeight: FontWeight.bold),),
            ),
            Expanded(
              child: Container(
                width: double.infinity,
                height: 60,
-               decoration: BoxDecoration(
+               decoration: const BoxDecoration(
                    color: Colors.white,
                    borderRadius: BorderRadius.only(topRight: Radius.circular(25), topLeft: Radius.circular(20) )
                ),
                child: Column(
                  children: [
-                   Padding(
-                     padding: const EdgeInsets.all(12.0),
+                   const Padding(
+                     padding: EdgeInsets.all(12.0),
                      child: Text('Selected Cleaning',style: TextStyle(fontWeight: FontWeight.bold), ),
                    ),
                    Row(
@@ -47,13 +47,13 @@ class _PlanPageState extends State<PlanPage> {
                                 height:150,
                                 width: 170,
                                 decoration: BoxDecoration(
-                                  color: Color(0xffDFDEFF),
+                                  color: const Color(0xffDFDEFF),
                                   borderRadius: BorderRadius.circular(25),
                                 ),
                                 child: Image.asset('assets/group4004.png'),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.all(10.0),
+                              const Padding(
+                                padding: EdgeInsets.all(10.0),
                                 child: Text('Initial Cleaning'),
                               ),
 
@@ -67,13 +67,13 @@ class _PlanPageState extends State<PlanPage> {
                                height:150,
                                width: 170,
                                decoration: BoxDecoration(
-                                 color: Color(0xffDFDEFF),
+                                 color: const Color(0xffDFDEFF),
                                  borderRadius: BorderRadius.circular(25),
                                ),
                                child: Image.asset('assets/group4040.png'),
                              ),
-                             Padding(
-                               padding: const EdgeInsets.all(10.0),
+                             const Padding(
+                               padding: EdgeInsets.all(10.0),
                                child: Text('Upkeep Cleaning'),
                              ),
 
@@ -82,7 +82,7 @@ class _PlanPageState extends State<PlanPage> {
                        ),
                      ],
                    ),
-                   Padding(padding: EdgeInsets.all(12),
+                   const Padding(padding: EdgeInsets.all(12),
                    child: Text('Selected Frequency',style: TextStyle(fontWeight: FontWeight.bold),),),
                    Row(
                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -91,95 +91,95 @@ class _PlanPageState extends State<PlanPage> {
                            height: 50,
                            width: 100,
                            decoration: BoxDecoration(
-                             border: Border.all(color: Color(0xff9B9B9B),width: 2),
-                             borderRadius: BorderRadius.all(Radius.circular(10)),
+                             border: Border.all(color: const Color(0xff9B9B9B),width: 2),
+                             borderRadius: const BorderRadius.all(Radius.circular(10)),
                            ),
-                           child:TextButton(onPressed: (){}, child: Text('Weekly',style: TextStyle(color: Color(0xff9B9B9B)),),)
+                           child:TextButton(onPressed: (){}, child: const Text('Weekly',style: TextStyle(color: Color(0xff9B9B9B)),),)
                        ),
                        Container(
                            height: 50,
                            width: 100,
                            decoration: BoxDecoration(
-                             border: Border.all(color: Color(0xff9B9B9B),width: 2),
-                             borderRadius: BorderRadius.all(Radius.circular(10)),
+                             border: Border.all(color: const Color(0xff9B9B9B),width: 2),
+                             borderRadius: const BorderRadius.all(Radius.circular(10)),
                            ),
-                           child:TextButton(onPressed: (){}, child: Text('Bi-weekly',style: TextStyle(color: Color(0xff9B9B9B)),),)
+                           child:TextButton(onPressed: (){}, child: const Text('Bi-weekly',style: TextStyle(color: Color(0xff9B9B9B)),),)
                        ),
                        Container(
                            height: 50,
                            width: 100,
                            decoration: BoxDecoration(
-                             border: Border.all(color: Color(0xff9B9B9B),width: 2),
-                             borderRadius: BorderRadius.all(Radius.circular(10)),
+                             border: Border.all(color: const Color(0xff9B9B9B),width: 2),
+                             borderRadius: const BorderRadius.all(Radius.circular(10)),
                            ),
-                           child:TextButton(onPressed: (){}, child: Text('Monthly',style: TextStyle(color: Color(0xff9B9B9B)),),)
+                           child:TextButton(onPressed: (){}, child: const Text('Monthly',style: TextStyle(color: Color(0xff9B9B9B)),),)
                        ),
                      ],
                    ),
-                 Padding(
-                   padding: const EdgeInsets.all(8.0),
+                 const Padding(
+                   padding: EdgeInsets.all(8.0),
                    child: Text('Selected Extras',style: TextStyle(fontWeight: FontWeight.bold),),),
-                   SizedBox(height: 25,),
+                   const SizedBox(height: 25,),
                    Row(
                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                      children: [
                        Container(
                          child: Column(
                            children: [
-                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/fridge.png',height: 40,)),
-                             SizedBox(height: 15),
-                             Text('Inside Fridge')
+                             CircleAvatar(backgroundColor:const Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/fridge.png',height: 40,)),
+                             const SizedBox(height: 15),
+                             const Text('Inside Fridge')
                            ],
                          ),
                        ),
                        Container(
                          child: Column(
                            children: [
-                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/organizing.png',height: 40,)),
-                             SizedBox(height: 15),
-                             Text('Organizing')
+                             CircleAvatar(backgroundColor:const Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/organizing.png',height: 40,)),
+                             const SizedBox(height: 15),
+                             const Text('Organizing')
                            ],
                          ),
                        ),
                        Container(
                          child: Column(
                            children: [
-                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/blinds.png',height: 40,)),
-                             SizedBox(height: 15),
-                             Text('Small Blinds')
+                             CircleAvatar(backgroundColor:const Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/blinds.png',height: 40,)),
+                             const SizedBox(height: 15),
+                             const Text('Small Blinds')
                            ],
                          ),
                        ),
                      ],
                    ),
-                   SizedBox(height: 30,),
+                   const SizedBox(height: 30,),
                    Row(
                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                      children: [
                        Container(
                          child: Column(
                            children: [
-                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/patio.png',height: 40,)),
-                             SizedBox(height: 15),
-                             Text('Patio')
+                             CircleAvatar(backgroundColor:const Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/patio.png',height: 40,)),
+                             const SizedBox(height: 15),
+                             const Text('Patio')
                            ],
                          ),
                        ),
                        Container(
                          child: Column(
                            children: [
-                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/organizing.png',height: 40,)),
-                             SizedBox(height: 15),
-                             Text('Organizing')
+                             CircleAvatar(backgroundColor:const Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/organizing.png',height: 40,)),
+                             const SizedBox(height: 15),
+                             const Text('Organizing')
                            ],
                          ),
                        ),
                        Container(
                          child: Column(
                            children: [
-                             CircleAvatar(backgroundColor:Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/blinds.png',height: 40,)),
-                             SizedBox(height: 15),
-                             Text('Small Blinds')
+                             CircleAvatar(backgroundColor:const Color(0xff5C4DB1) ,radius:35,child: Image.asset('assets/blinds.png',height: 40,)),
+                             const SizedBox(height: 15),
+                             const Text('Small Blinds')
                            ],
                          ),
                        ),
