@@ -32,9 +32,10 @@ class _PlanPageState extends State<PlanPage> {
                    borderRadius: BorderRadius.only(topRight: Radius.circular(25), topLeft: Radius.circular(20) )
                ),
                child: Column(
+                 crossAxisAlignment: CrossAxisAlignment.start,
                  children: [
                    const Padding(
-                     padding: EdgeInsets.all(12.0),
+                     padding: EdgeInsets.only(left: 25.0, top: 12,bottom: 12),
                      child: Text('Selected Cleaning',style: TextStyle(fontWeight: FontWeight.bold), ),
                    ),
                    Row(
@@ -82,7 +83,7 @@ class _PlanPageState extends State<PlanPage> {
                        ),
                      ],
                    ),
-                   const Padding(padding: EdgeInsets.all(12),
+                   const Padding(padding: EdgeInsets.only(left: 25.0, top: 12,bottom: 12),
                    child: Text('Selected Frequency',style: TextStyle(fontWeight: FontWeight.bold),),),
                    Row(
                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -117,9 +118,9 @@ class _PlanPageState extends State<PlanPage> {
                      ],
                    ),
                  const Padding(
-                   padding: EdgeInsets.all(8.0),
+                   padding: EdgeInsets.only(left: 25.0, top: 18,),
                    child: Text('Selected Extras',style: TextStyle(fontWeight: FontWeight.bold),),),
-                   const SizedBox(height: 25,),
+                   const SizedBox(height: 20,),
                    Row(
                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                      children: [

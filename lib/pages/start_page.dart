@@ -29,10 +29,10 @@ class _StartPageState extends State<StartPage> {
                   Text('Nimbl.', style: TextStyle(fontSize: 26,color: Colors.white,fontWeight: FontWeight.bold),),
                 ],
               ),
-              Text('Clean Home \nClean Life.',style: TextStyle(fontSize: 36,color: Colors.white,fontWeight: FontWeight.bold),),
+              Text('Clean Home \n  Clean Life.',style: TextStyle(fontSize: 36,color: Colors.white,fontWeight: FontWeight.bold),),
               Padding(
                 padding: const EdgeInsets.all(22.0),
-                child: Text('Book Cleaners at the Comfort \n of you home.',style: TextStyle(color: Colors.white,fontSize: 20),),
+                child: Text('Book Cleaners at the Comfort\n            of you home.',style: TextStyle(color: Colors.white,fontSize: 20),),
               ),
               ],
           ),
@@ -53,7 +53,7 @@ class _StartPageState extends State<StartPage> {
                 height: 60,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(20)),
+                  borderRadius: BorderRadius.only(topLeft: Radius.circular(20),bottomRight: Radius.circular(5)),
                 ),
                 child:TextButton(onPressed: (){Navigator.of(context).pushNamed('/first');}, child: Text('Get Started'),)
             ),
